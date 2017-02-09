@@ -1,5 +1,5 @@
 # scala-spark-HelloWorld
-Hello word in scala+spark on Sheffield's HPC sluster
+How to compile and run a 'Hello World' application on Sheffield's HPC clusters.
 
 ## Iceberg
 
