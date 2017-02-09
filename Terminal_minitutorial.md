@@ -15,14 +15,44 @@ directory) you only need to type the command `pwd`.
 ## Understanding the syntax
 When you open the terminal you might see something similar to: **username@computer ~ $**
 
+- The ~ next to the computer name indicates the home directory
+- The $ (Ready) indicates that the prompt is ready to accept your command, the $ is just there, you do not need to type it.
+
+## Clear
+At some point you might end up with your terminal full of lines, by typing the command `clear` you can clear the terminal screen.
+
 ## Listing the Directory contents
 If within a directory you want to see its content you can use the `ls` command.
 
 If you need more detailed information on the contents (e.g. access permissions,
 date the file was last modified, etc.) you can use the command `ls -l`.
 
-## Moving across directories
-To change your working directory you need to use the `cd` command, followed by the *pathname* of the directory you want to move into e.g
+## Moving between directories
+To change your working directory you need to use the `cd` command (change directory), followed by the *pathname* of the directory you want to move into e.g
 `cd /HelloWorld/src/`
 
-If you do not specify a pathname and just type `cd`, ut will take you back to your home directory.
+If you do not specify a pathname and just type `cd`, which will take you back to your home directory.
+
+If you want to go to the previous directory (or a directory closer to the root) you can type `cd ..`. This will take you back one directory at a time.
+
+If you are trying to move to a directory that has spaces in the path you need to use "" to preserve the spaces: `cd "Mini tutorial"`
+
+## Creating directories
+So far we have covered how to move between existing directories, but we can just as well create directories using the command line:
+`mkdir HelloWorld`
+If you want to create a folder within the HelloWorld directory you just created you can do it by typing `mkdir HelloWorld/data` without the need to change directories first.
+
+
+## Creating files
+You can create empty files using the `touch` command, for example `touch project.scala`. For this you need to be into the directory you want the file to be created, otherwise you need to specify the full path of the file: `mkdir HelloWorld/data/one.txt`
+
+You can even create multiple files at a time `touch one.txt two.txt`
+
+
+## Deleting files
+To permanently delete files you can use the `rm` command e.g. `rm one.txt`. Or even delete various files at a time `rm one.txt two.txt`
+
+The `rm` command works as well for directories: `rm HelloWorld/dummy`
+
+## Copying files
+You can copy files between directories by using `cp source destination` indicating the path of the file and then the path where you want the copy to be created.
