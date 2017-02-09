@@ -56,3 +56,6 @@ The `rm` command works as well for directories: `rm HelloWorld/dummy`
 
 ## Copying files
 You can copy files between directories by using `cp source destination` indicating the path of the file and then the path where you want the copy to be created.
+
+## But it is too much typing...
+We've got you covered! Let's say you want to go to your data directory. You can start use the autocomplete function you can start typing `cd HelloWorld/da` and then press the **Tab** key on your keyboard and the prompt will... well autocomplete the path for you.
