@@ -9,9 +9,6 @@ object HelloWorld {
       .appName("Hello World")
        .getOrCreate()
 
-    ///shhhhhhhh spark
-    spark.sparkContext.setLogLevel('ERROR')
-    
     // do stuff
     println("Hello, world!")
     
