@@ -1,7 +1,22 @@
 # scala-spark-HelloWorld
-Hello word in scala+spark on Sheffield's HPC sluster
+How to compile and run a 'Hello World' application on Sheffield's HPC clusters.
 
 ## Iceberg
+
+Get the example
+
+```
+module load apps/gcc/5.2/git/2.5
+git clone https://github.com/mikecroucher/scala-spark-HelloWorld
+```
+
+Enter the project directory
+
+```
+cd scala-spark-HelloWorld/
+```
+
+Load the module files for sbt and spark
 
 ```
 module load /apps/binapps/sbt/0.13.13 
