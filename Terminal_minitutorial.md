@@ -78,7 +78,7 @@ rmdir dir1/an-empty-dir
 To recursively delete directories (delete non-empty directories and their contents): 
 
 ```bash
-rm dir1/dir_with_stuff_in
+rm -r dir1/dir_with_stuff_in
 ```
 
 ## Copying files
