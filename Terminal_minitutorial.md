@@ -72,7 +72,7 @@ rm one.txt two.txt
 To delete *empty* directories:
 
 ```bash
- rm dir1/an-empty-dir
+rmdir dir1/an-empty-dir
 ```
 
 To recursively delete directories (delete non-empty directories and their contents): 
