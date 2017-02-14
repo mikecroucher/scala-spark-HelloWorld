@@ -13,13 +13,17 @@ if at any point you are unsure which folder you are "in" (which is your working
 directory) you only need to type the command `pwd`.
 
 ## Understanding the syntax
-When you open the terminal you might see something similar to: **username@computer ~ $**
+When you open the terminal you might see a *prompt* similar to: 
 
-- The ~ next to the computer name indicates the home directory
-- The $ (Ready) indicates that the prompt is ready to accept your command, the $ is just there, you do not need to type it.
+```
+username@computer ~ $
+```
+
+- The `~` character is typically shorthand for your *home directory*.  Here you being told that your *present working directory* is your home directory.
+- The `$` (Ready) indicates that the prompt is ready to accept your command; the `$` is just there, you do not need to type it.
 
 ## Clear
-At some point you might end up with your terminal full of lines, by typing the command `clear` you can clear the terminal screen.
+At some point you might end up with your terminal full of lines. By typing the command `clear` you can clear the terminal screen.
 
 ## Listing the Directory contents
 If within a directory you want to see its content you can use the `ls` command.
@@ -28,8 +32,11 @@ If you need more detailed information on the contents (e.g. access permissions,
 date the file was last modified, etc.) you can use the command `ls -l`.
 
 ## Moving between directories
-To change your working directory you need to use the `cd` command (change directory), followed by the *pathname* of the directory you want to move into e.g
-`cd /HelloWorld/src/`
+To change your working directory you need to use the `cd` command (change directory), followed by the *pathname* of the directory you want to move into e.g:
+
+```bash
+cd /HelloWorld/src/
+```
 
 If you do not specify a pathname and just type `cd`, which will take you back to your home directory.
 
@@ -50,9 +57,29 @@ You can even create multiple files at a time `touch one.txt two.txt`
 
 
 ## Deleting files
-To permanently delete files you can use the `rm` command e.g. `rm one.txt`. Or even delete various files at a time `rm one.txt two.txt`
+To permanently delete files you can use the `rm` command e.g. 
 
-The `rm` command works as well for directories: `rm HelloWorld/dummy`
+```bash
+rm one.txt
+```
+
+Or even delete various files at a time
+
+```bash
+rm one.txt two.txt
+```
+
+To delete *empty* directories:
+
+```bash
+rmdir dir1/an-empty-dir
+```
+
+To recursively delete directories (delete non-empty directories and their contents): 
+
+```bash
+rm -r dir1/dir_with_stuff_in
+```
 
 ## Copying files
 You can copy files between directories by using `cp source destination` indicating the path of the file and then the path where you want the copy to be created.
