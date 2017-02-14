@@ -49,6 +49,11 @@ So far we have covered how to move between existing directories, but we can just
 `mkdir HelloWorld`
 If you want to create a folder within the HelloWorld directory you just created you can do it by typing `mkdir HelloWorld/data` without the need to change directories first.
 
+If you need to create a multiple embedded directories, instead of creating one by one you can use the `mkdir` option `-p` which will create the parent directories i.e.
+
+```bash
+mkdir -p Helloworld/data/myproject/test1/
+```
 
 ## Creating files
 You can create empty files using the `touch` command, for example `touch project.scala`. For this you need to be into the directory you want the file to be created, otherwise you need to specify the full path of the file: `mkdir HelloWorld/data/one.txt`
