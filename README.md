@@ -19,8 +19,8 @@ cd scala-spark-HelloWorld/
 Load the module files for sbt and spark
 
 ```
-module load /apps/binapps/sbt/0.13.13 
-module load /apps/gcc/4.4.7/spark/2.0
+module load apps/binapps/sbt/0.13.13 
+module load apps/gcc/4.4.7/spark/2.0
 ```
 
 Compile with 
